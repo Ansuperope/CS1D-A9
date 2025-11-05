@@ -13,8 +13,8 @@ run:
 	./$(TARGET)
 
 # Link object files into executable
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
+$(TARGET): $(TARGET).cpp
+	$(CC) $(CFLAGS) $@.cpp -o $@
 # $@ target name
 # $^ all prerequisites / dependencies
 
