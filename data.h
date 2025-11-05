@@ -34,4 +34,13 @@ std::unordered_map<int, std::string> cities {
     { SE, "Seattle" }
 };
 
+// PRINTS CITY NAME
+void printCity (int index) {
+    auto it = cities.find(index);
+
+    if (it != cities.end()) {
+        std::cout << it->second << " ";
+    }
+    
+} // END printCity
 #endif

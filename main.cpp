@@ -54,8 +54,8 @@ int main() {
     addEdge(adjMat, AT, HO, 810);
     addEdge(adjMat, HO, MI, 1187);
     
-    std::cout << "test\n";
-    displayMatrix(adjMat);
+    std::cout << "Part B - BFS\n";
+    bfs(adjMat, DEN);
 
     return 0;
 } // END main
